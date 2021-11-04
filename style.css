@@ -1,0 +1,23 @@
+main:first-child{
+    background-image: url("./images/landing.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+    padding: 2em;
+}
+
+nav>div>img{
+    width:250px;
+    height: 70px;
+}
