@@ -1,8 +1,101 @@
-/*
-Colors:
+*{
+    box-sizing: border-box;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+#landing{
+    background-image:url('../images/landing.jpg');
+    background-repeat:no-repeat;
+    background-size: 100%;
 
-*/
+    padding-top: 12em;
+    padding-bottom: 12em;
+    text-align: center;
+    color: ivory;
+    
+}
+
+#landing>h1{
+    font-size: 5em;
+}
+
+#landing>h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    
+}
+
+main>section>h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: green ;
+}
+
+nav>ul{
+    display: flex;
+    float: inline-end;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+    padding: 2em;
+}
+
+nav>div>img{
+    display: flex;
+    float: left;
+    width:250px;
+    height: 70px;
+
+}
+
+article>h3{
+    color: #1AB16A;
+}
+
+article>h4{
+    font-weight: lighter;
+}
+
+article>div>img{
+    width: 5rem;
+}
+
+ section>section{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    font-size: 1.2em;
+}
+
+main>section:last-child{   
+    display: flex;
+    flex-direction: column;
+    background-color: #1AB16A;
+    color: white;
+}
+
+section>section>h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+main>section:last-child>section>div{
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.grande{
+    display: flex;
+    width: 20em;
+}
