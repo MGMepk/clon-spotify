@@ -6,12 +6,11 @@
     background-image:url('../images/landing.jpg');
     background-repeat:no-repeat;
     background-size: 100%;
-
+    background-position: center;
     padding-top: 12em;
     padding-bottom: 12em;
     text-align: center;
-    color: ivory;
-    
+    color: white;
 }
 
 #landing>h1{
@@ -32,16 +31,19 @@ nav{
 }
 
 main>section>h2{
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: green ;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid green;
 }
 
 nav>ul{
     display: flex;
     float: inline-end;
     justify-content: space-between;
+    text-align: right;
+    position: fixed;
     list-style: none;
+    margin-left: 50em;
 }
 
 li>a{
@@ -66,36 +68,62 @@ article>h4{
     font-weight: lighter;
 }
 
+article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 2em;
+}
+
 article>div>img{
-    width: 5rem;
+    width: 5.5rem;
 }
 
  section>section{
     display: flex;
     justify-content: center;
+    text-align: center;
     align-content: space-around;
     font-size: 1.2em;
 }
 
-main>section:last-child{   
+main>section:last-child{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     background-color: #1AB16A;
     color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-image: url('../images/spotify-icon-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10rem;
 }
 
 section>section>h2{
-    text-decoration: underline;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid white;
+}
+
+main>section:last-child>section{
+display:flex;
+float: left;
+flex-direction: column;
 }
 
 main>section:last-child>section>div{
-display:flex;
-flex-direction: column;
-justify-content: space-between;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
 }
+
 
 .grande{
     display: flex;
+    float: right;
     width: 20em;
 }
