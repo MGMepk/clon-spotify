@@ -1,6 +1,6 @@
-*{
-    box-sizing: border-box;
-}
+*{ box-sizing: border-box;}
+
+html{ scroll-behavior: smooth;}
 
 #landing{
     background-image:url('../images/landing.jpg');
@@ -27,23 +27,25 @@ nav{
     position: fixed;
     background-color: white;
     width: 100%;
-    
 }
 
 main>section>h2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 2px solid green;
+    text-decoration: underline;
+    text-decoration-color: green;
 }
 
 nav>ul{
     display: flex;
-    float: inline-end;
-    justify-content: space-between;
-    text-align: right;
-    position: fixed;
+    justify-content: flex-end;
+    justify-items: right;
+    align-items:center;
     list-style: none;
     margin-left: 50em;
+    position: relative;
+    left: 16%;
 }
 
 li>a{
